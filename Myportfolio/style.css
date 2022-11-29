@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.banner{
+    background-color: #E9D6B9;
+    width: 100%;
+    
+   
+}
+.nav-bar{
+    display: flex;
+    padding: 10px 10%;   
+    justify-content: space-between;
+    align-items: center;
+    background: #FFD952;
+    box-shadow: 0px 38px 60px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    z-index: 2;
+}
+.nav-bar img{
+   width: 10% ;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 10px 20px; 
+         
+}
+
+.nav-bar li {
+    display: flex;
+    padding: 0 20px;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav-bar a:hover{
+    color: red;
+    font-weight: 500;
+}
+
+.Home-background{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hexagon{
+    position: absolute;
+    width: 120%;
+    height: 78%;
+    left: 109px;
+    top: 10%;
+    z-index: -2;
+
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 177px;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #E9D6B9 0%, rgba(233, 216, 189, 0.484375) 46.34%, rgba(233, 216, 189, 0.505208) 46.35%, rgba(234, 218, 193, 0) 100%);
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+.designer{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 25%;
+    
+}
+.profile{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    justify-content: end;
+    margin-top: 5%;
+    z-index: 0;
+}   
+.profile p{
+   position: absolute;
+   top: 20%;
+   font-size: 2em;
+   left: 10%;
+   text-align: center;
+
+}
+.intro{
+    
+    display: flex;
+    width:50%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    
+}
+.intro-con{
+    position:absolute;
+    top: 30%;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+.greet{
+    font-weight: 400;
+}
+.text {
+    font-weight: 400;
+    
+}
+.name {
+    font-weight: 700;
+}
+
+/* Added about section */
+.about {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.Back2{
+    position: absolute;
+    width: 101%;
+    height: 840px;
+    left: -15.5px;
+    bottom: -1%;
+    
+}
+.PerInfo {
+    margin-top: 5%;
+    display: flex;
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.PerInfo h1{
+    padding:10px 50px;
+    text-align: center;
+}
+.PerInfo h2 {
+    font-size: 2rem;
+    margin-top: 2% 0;
+    color: rgb(46, 46, 46);
+    border-bottom:solid 1px black;
+}
+.about p{
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1%;
+}
+.ReadMore-btn{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px 5%;
+    margin-top: 2%;
+    color: black;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex ;
+    z-index: 0;
+    transition: .5s;
+    cursor: pointer; 
+}
+.ReadMore-btn:hover{
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-decoration: none;
+    border-color: transparent;
+    text-align: center;
+    box-shadow: -15px 18px 7px rgba(0, 0, 0, 0.25);
+    font-size: 1.5em;
+    padding: 20px 5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    background:linear-gradient(
+        90deg,
+        #ffb452,
+        #fc9510,
+        #f17575,
+        #fa88d4,
+        #f17575,
+        #fc9510,
+        #ffb452
+    );
+    display: flex ;
+    animation: glow 12s linear forwards;
+    background-size: 400%;
+}
+@keyframes glow {
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 400%;
+    }
+}
+.ReadMore-btn::before{
+    content: '';
+    position: absolute;
+
+}
+.WIDFN{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    position: relative;
+
+}
+.diagram{
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+.icons{
+    
+    display: flex;
+    width:20%;
+    height: 100%;
+    float: right;
+   
+   
+}
+.WIDFN h1{
+    
+    height: 9%;
+    position: absolute;
+    left: 10%;
+    top: 2%;
+   
+}
+.yellow {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 24%;
+    top:21%;
+}
+.violet{
+    width: 50px;
+    height: 40px;
+    position: absolute; 
+    left: 24%;
+    top:55.5%; 
+}
+.red{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 24%;
+    top: 85%;
+}
+.line1 p{
+    border-bottom:solid 2px #000000;
+    width: 66.5%;
+    position: absolute;
+    top: 18.5%;
+    
+}
+.line2 p{
+    border-bottom: solid 2px #000;
+    position: absolute;
+    width:67.5% ;
+    top: 52.5%;
+    
+}
+.line3 p{
+    border-bottom:  solid  2px #000;
+    position: absolute;
+    width:66.7% ;
+    top: 82.5%;
+
+    
+}
+.broken{
+    border-left: dashed 2px black;
+    height: 350px;
+    position:absolute;
+    top: 25%;
+    left:25.6%;
+
+   
+
+}
+.fa-solid{
+   
+    position: absolute;
+    top: 21%;
+    right: 20%;
+    
+}
+.fa-sharp{
+    position: absolute;
+    top: 55%; 
+
+}
+.hed{
+    position: absolute;
+    top: 85%;
+  
+}
+.WIDFN p{
+    
+    height: 4%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.word1 {
+    position: absolute;
+    top: 26%;
+    left: 25%;
+    justify-content: center;
+}
+.word2{
+    position: absolute;
+    top: 51%;
+    left: 25%;
+    justify-content: center;
+}
+.word3{
+    position: absolute;
+    top: 76%;
+    left: 25%;
+    justify-content: center;
+}
+/*Resume Section*/
+.Resume{
+    width: 100%;
+    height: 215vh;
+    position: relative;
+}
+.colormixer{
+    width:100%;
+    height: 5%;
+    background: linear-gradient(180deg, #FFD952 0%, #CCB9A1 100%);
+}
+.Education{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+}
+.prof{
+    width: 100%;
+    height: 45%;
+}
+.Tittle{
+    background-color: #CCBBA2;
+    text-align: center;
+}
+.ResumePic{
+    width: 17%;
+    height: 16%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    filter: drop-shadow(0px 21px 11px rgba(4, 4, 4, 0.25));
+    
+}
+.Name{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 28%;
+    left: 42%;
+
+}
+.educ{
+    border-bottom:solid 2px black;
+    width: 80%;
+    height:5% ;
+    font-weight: 650;
+    margin-top: 10%;
+    align-self: center;
+    justify-content:start;
+    display: flex; 
+    z-index: 0;
+}
+.sider {
+    font-weight: 700;
+    font-size: 1.5rem;
+    justify-self: center;
+}
+.E-Background{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.year1{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    left: 10%;
+    font-weight:500;
+    font-size: 1.7rem;
+    
+}
+.Strand{
+    color: black;
+    position: absolute;
+    left: 33%;
+    font-size: 1.7rem;
+    font-weight:500;
+}
+.School{
+    position: absolute;
+    left:29%;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.year2{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-weight:500;
+    font-size: 1.7rem;
+    
+}
+.Course{
+    color: black;
+    position: absolute;
+    left: 33%;
+    top: 42%;
+    font-size: 1.7rem;
+    font-weight:500;
+}
+.University{
+    position: absolute;
+    left:18%;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.skills{
+    display: flex;
+    width: 100%;
+    height: 45%;
+    position: relative;
+    justify-content: center;
+}
+.Skill{
+    width: 80%;
+    height: 5%;
+    border-bottom: solid 2px black;
+    
+}
+.sider2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    justify-self: center;
+    
+}
+.S-Background{
+    display: flex   ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.S-Background img{
+    width: 13%;
+    height: 25%;
+  
+}
+.figma{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.css{
+    position: absolute;
+    top: 10%;
+    right:20%;
+    filter: drop-shadow(-13px 8px 5px rgba(0, 0, 0, 0.25));
+}
+.html{
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    filter: drop-shadow(-13px 8px 5px rgba(0, 0, 0, 0.25));
+}
+.Back3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    z-index: 0;
+}
+.S-Background a{
+    position: absolute;
+    bottom: 25%;
+    font-size: 1.5rem;
+    background-color: #E9D6B9;
+    border: solid 1px black;
+    color: #000;
+    padding: 30px 80px 30px 80px;
+    border-radius: 10px;
+    width: 20%;
+    text-decoration: none;
+    left: 42%;
+    z-index: 1;
+    transition: .5s;
+
+}
+.S-Background a:hover{
+    position: absolute;
+    bottom: 25%;
+    font-size: 1.5rem;
+    background-color: #E9D6B9;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 30px 80px 30px 80px;
+    border-radius: 10px;
+    width: 20%;
+    text-decoration: none;
+    box-shadow: -15px 18px 7px rgba(0, 0, 0, 0.25);
+    left: 42%;
+    z-index: 0;
+    background:linear-gradient(
+        90deg,
+        #ffb452,
+        #fc9510,
+        #f17575,
+        #fa88d4,
+        #f17575,
+        #fc9510,
+        #ffb452
+    );
+    animation: glow 12s linear forwards;
+    background-size: 400%;
+}
+@keyframes glow {
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 400%;
+    }
+}
+/*added portfolio section*/
+
+.Portfolio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-weight: 100%;
+    background-color: #EFC88E;
+}
+.P-header{
+   
+    display: flex;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom,#E9D6B9 0%, #EFC88E  100%);
+    justify-content: center;
+ 
+}
+.sub-tittle{
+    position: absolute;
+    align-self:flex-end;
+}
+.P-footer{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, #EBD7A6 0%, #E9D6B9 100%);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    bottom: 0;
+    z-index: -auto;
+    font-size: 1.5rem;
+}
+.P-foot{
+    color: #000;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: 1;
+}
+.P-foot:hover{
+    color: rgb(255, 255, 255);
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 10px;
+    z-index: 0;
+    background:linear-gradient(
+        90deg,
+        #ffb452,
+        #fc9510,
+        #f17575,
+        #fa88d4,
+        #f17575,
+        #fc9510,
+        #ffb452
+    );
+    animation: glow 12s linear forwards;
+    background-size: 400%;
+    box-shadow: -15px 18px 7px rgba(0, 0, 0, 0.25);
+}
+.fade{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+}
+.back4{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+    }
+.MCW{
+    position: relative;
+    height: 5%;
+    width: 100%;
+    top: 14%;
+    font-size: 1.2rem;
+
+}
+.MCW h1{
+    position: absolute;
+    left: 10%;
+}
+.workcontainer{
+    height: 65%;
+    width: 100%;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+}
+.worklist1{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #f1efca;
+}
+.works1{
+    height: 45%;
+    width: 60%;
+    display: flex;
+    position:absolute;
+    right: 5%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.layer1{
+    height: 0%;
+    width: 60%;
+    display: flex;
+    position:absolute;
+    right: 5%;
+    background: linear-gradient(rgba(0,0,0,-5),hsl(39, 89%, 76%));
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 13px 10px rgba(0, 0, 0, 0.25);
+    transition: height 0.5s;
+}
+.work:hover .layer1{
+    height: 45%;
+
+}
+
+.works2{
+    height: 45%;
+    width: 60%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    border-radius: 10px;
+}
+.layer2{
+    height: 0%;
+    width: 60%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    background: linear-gradient(rgba(0,0,0,0.8),hsl(39, 89%, 76%));
+    overflow: hidden ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 13px 10px rgba(0, 0, 0, 0.25);
+    transition: height 0.5s;
+}
+.work:hover .layer2{
+    height: 45%;
+
+}
+.worklist2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #f1efca;
+}
+.works3{
+    height: 45%;
+    width: 60%;
+    display: flex;
+    position:absolute;
+    left: 5%;
+    border-radius: 10px;
+}
+.layer3{
+    height: 0%;
+    width: 60%;
+    display: flex;
+    position:absolute;
+    left: 5%;
+    background: linear-gradient(rgba(0,0,0,0.5),hsl(39, 89%, 76%));
+    overflow: hidden ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 13px 10px rgba(0, 0, 0, 0.25);
+    transition: height 0.5s;
+}
+.work:hover .layer3{
+    height: 45%;
+}
+.works4{
+    height: 45%;
+    width: 60%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    border-radius: 10px;
+}
+.layer4{
+    height: 0%;
+    width: 60%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background: linear-gradient(rgba(0,0,0,0.5),hsl(39, 89%, 76%));
+    overflow: hidden ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 13px 10px rgba(0, 0, 0, 0.25);
+    transition: height 0.5s;
+}
+.work:hover .layer4{
+    height: 45%;
+}
+
+
+/* added contact section*/
+
+.Contact{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.note{
+    margin-top: 5%;
+    display: flex;
+    height: 13%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.back5{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+}
+.note h1{
+    display: flex;
+    flex-direction: column;
+}
+.container-1{
+    width: 40%;
+    height: 60%;
+    position: relative;
+    right: 10%;
+    top: 3%;
+    background-color: #E9D6B9;
+    box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+}
+.container-1 form{
+    position: relative;
+    left: 5%;
+    top: 6%;
+}
+.container-1  input, form textarea{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    border-radius: 10px;
+ 
+}
+.container-1 form .btn{
+    display: flex;
+    background: #fd8c8c;
+    justify-content: center;
+    color: rgb(75, 75, 75);
+}
+.container-1 form .btn:hover{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(
+        90deg,
+     
+        #f36464,
+        #fc3f3f,
+        #fc0404,
+        #c40000,
+        #fc0404,
+        #fc3f3f,
+        #f36464
+     
+    );
+    animation: glow 12s linear forwards;
+    background-size: 400%;
+}
+.container-2{
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    right: 29%;
+    top: 25.6%;
+    background-color: #E9D6B9;
+    box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* added footer section*/
+.footer-section{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    opacity: 0.7;
+    z-index: 2;
+}
+.footer-section img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.footer-line{
+    height: 1%;
+    width: 100%;
+    background: transparent;
+    border-bottom: dashed 2px rgb(0, 0, 0);
+    position:relative;
+}
